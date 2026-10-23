@@ -20,7 +20,9 @@ namespace es_stringhe
         private void btn_n1_Click(object sender, EventArgs e)
         {
             string parola = txt_n1.Text;
-            int lunghezza = parola.Length;
+            int vocali = 0, lunghezza = parola.Length;
+            bool diversi = true;
+            char temp;
 
             if (string.IsNullOrEmpty (parola)) 
             {
@@ -28,7 +30,18 @@ namespace es_stringhe
             }
             else
             {
+                for (int i = 0; i < lunghezza; i++)
+                {
 
+                    if (parola[i] == "a" || parola[i] == "e" || parola[i] == "i" || parola[i] == "o" || parola[i] == "u")
+                    {
+                        vocali = vocali + 1;
+                    }
+
+
+                }
+
+                lbl_n2.Text = "Il numero di vocali è" + vocali;
             }
         }
     }
