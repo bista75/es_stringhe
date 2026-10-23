@@ -16,5 +16,20 @@ namespace es_stringhe
         {
             InitializeComponent();
         }
+
+        private void btn_n1_Click(object sender, EventArgs e)
+        {
+            string parola = txt_n1.Text;
+            int lunghezza = parola.Length;
+
+            if (string.IsNullOrEmpty (parola)) 
+            {
+                MessageBox.Show("Attenzione! Inserire una parola");
+            }
+            else
+            {
+
+            }
+        }
     }
 }
