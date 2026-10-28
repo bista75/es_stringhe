@@ -30,10 +30,10 @@ namespace es_stringhe
             }
             else
             {
-                for (int i = 0; i < lunghezza; i++)
+                for (int i = 0; i < parola.Length; i++)
                 {
 
-                    if (parola[i] == "a" || parola[i] == "e" || parola[i] == "i" || parola[i] == "o" || parola[i] == "u")
+                    if (parola[i] == 'a' || parola[i] == 'e' || parola[i] == 'i' || parola[i] == 'o' || parola[i] == 'u')
                     {
                         vocali = vocali + 1;
                     }
@@ -41,7 +41,7 @@ namespace es_stringhe
 
                 }
 
-                lbl_n2.Text = "Il numero di vocali è" + vocali;
+                lbl_n2.Text = "Numero di vocali: " + vocali;
             }
         }
     }
