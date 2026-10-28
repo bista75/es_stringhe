@@ -66,9 +66,9 @@
             this.lbl_n2.AutoSize = true;
             this.lbl_n2.Location = new System.Drawing.Point(12, 106);
             this.lbl_n2.Name = "lbl_n2";
-            this.lbl_n2.Size = new System.Drawing.Size(87, 13);
+            this.lbl_n2.Size = new System.Drawing.Size(89, 13);
             this.lbl_n2.TabIndex = 3;
-            this.lbl_n2.Text = "numero di vocali:";
+            this.lbl_n2.Text = "Numero di vocali:";
             // 
             // lbl_n3
             // 

@@ -20,7 +20,7 @@ namespace es_stringhe
         private void btn_n1_Click(object sender, EventArgs e)
         {
             string parola = txt_n1.Text;
-            int vocali = 0, lunghezza = parola.Length;
+            int vocali = 0;
             bool diversi = true;
             char temp;
 
@@ -40,8 +40,31 @@ namespace es_stringhe
 
 
                 }
+                for(int i = 0; i  < parola.Length; i++)
+                {
+                    for(int z = i + 1;  z < parola.Length; z++)
+                    {
+                        if (parola[i] == parola[z])
+                        {
+                            diversi = false;
+                            break;
+                        }
+                    }
+                    if (!diversi)
+                    {
+                        break;
+                    }
+                }
 
                 lbl_n2.Text = "Numero di vocali: " + vocali;
+                if (diversi)
+                {
+                    lbl_n3.Text = ("aura: i caratteri sono tutti diversi");
+                }
+                else
+                {
+                    lbl_n3.Text = ("aura: ci sono caratteri ripetuti");
+                }
             }
         }
     }
